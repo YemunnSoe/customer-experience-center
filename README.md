@@ -32,7 +32,8 @@ The project aligns with the organization's mission to empower farmers with the r
 > JSON from Viber Community: We have launched a digital farming practices community in Myanmar by utilizing the widespread coverage of Viber users. Through these communities, we educate farmers on the best practices to manage their farms, land, crops, pests & diseases, and yield. Viber serves as our platform to achieve these goals and connect with farmers.  The platform allows us to export JSON files, which contain daily-level-aggregated data that highlights the status of the community. The digital marketing team is responsible for launching new farming practices, educating, engaging, and maintaining these communities. They regularly download these JSON files and reached out our team (Data Analytics team) for leveraging the power of data and analytics to gain insights into community performance.
 
 
-# DAX used in this SAMPLE Dashboard
+### DAX used in this SAMPLE Dashboard
+
 ```
 # of Inquiry (Hotline) =
 CALCULATE (
@@ -61,7 +62,7 @@ RETURN
 CALCULATE(Hotline + SocialMedia)
 ```
 
-#SQL Query
+### SQL Query
 
 ```
 select 
@@ -95,7 +96,7 @@ from
 
 ```
 
-####Batch Script
+### Batch Script
 ```
 C:\"Program Files"\KNIME\knime.exe -consoleLog -nosplash -application org.knime.product.KNIME_BATCH_APPLICATION -workflowFile=A:\Knime-workflow\automatedscripts\Name_of_Workflow.knwf -reset -nosave
 
