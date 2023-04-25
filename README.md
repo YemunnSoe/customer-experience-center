@@ -1,10 +1,6 @@
-# Background Information
+# Background
 
-The Customer Experience Center (CEC) team plays a vital role in providing customer support and crop protection services through various channels, such as hotline, direct communication, and social media. This team also plays a crucial role in our organization's digital transformation strategy aimed at providing extensive support to underserved farmers, especially during economic downturns and crises. 
-
-As the organization scales up its digital agronomy operations, there is a need to establish a robust data ecosystem to track and analyze key performance metrics, which will enable better decision-making and support the existing service channels. The organization's mission is to provide affordable farming technologies and knowledge to Myanmar's farmers, who lack access to resources that can help them adapt to a changing climate while their livelihoods directly depend on it. 
-
-The project aligns with the organization's mission to empower farmers with the right information at the right time to protect their crops from adverse weather conditions and increased pestilence. Most farmers hear or learn about new farm practices and technologies during in-person exchanges. Unfortunately, the pandemic disrupted that routine. So, this project aims to shift from in-person to digital farming advisory, leveraging the growth of social media and information systems with intelligence feedback loops to provide timely and cost-effective farming advice directly to farmers' smartphones. 
+The Customer Experience Center (CEC) team plays a vital role in providing customer support and sale support through various channels, such as hotline, direct communication, and social media. This team also plays a crucial role in many organizations digital transformation strategy aimed at providing extensive support to a wide variety of users. As the organization scales up its digital operations, there is a need to establish a robust data ecosystem to track and analyze key performance metrics, which will enable better decision-making and support the existing service channels. In this SAMPLE project ....
 
 # Project Deliverables
 - Project charter [(See More)](https://bit.ly/43OcuA1)
