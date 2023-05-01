@@ -1,6 +1,6 @@
 # Background
 
-The Customer Experience Center (CEC) team plays a vital role in providing customer support and sale support through various channels, such as hotline, direct communication, and social media. This team also plays a crucial role in many organizations digital transformation strategy aimed at providing extensive support to a wide variety of users. As the organization scales up its digital operations, there is a need to establish a robust data ecosystem to track and analyze key performance metrics, which will enable better decision-making and support the existing service channels. 
+The Customer Experience Center (CEC) team plays a vital role in providing customer support and sale support through various channels, such as hotline, direct communication, and social media. This team also plays a crucial role in many organizations digital transformation strategy aimed at providing extensive support to a wide variety of users. As the organization scales up its digital operations, there is a need to establish a robust data ecosystem to track and analyze key performance metrics, which will enable better decision-making and support the existing service channels. [(Read More)](https://bit.ly/3nkxqOC)
 
 
 ![](./Diagrams/Define_System_Requirements.png)
