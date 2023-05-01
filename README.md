@@ -18,7 +18,7 @@ The Customer Experience Center (CEC) team plays a vital role in providing custom
 - User training
 - Meeting notes [(See More)](https://bit.ly/3VmnccX)
 
-
+### Requirement Collection Approach
 
 ![](./Diagrams/Requirement_Collection_Approach.png)
 
@@ -42,6 +42,7 @@ I use pre-agreated data for this for this portfolio project. It helps me reduce 
 - Summarizing data by time intervals (daily basics)
 - Aggregating data by categories (less granularity in dimension data)
 - Filtering data to exclude irrelevant records (omit senstive information)
+
 [](./Diagrams/Data_Modeling.png)
 
 ### DAX used in this SAMPLE Dashboard [(See More)](https://bit.ly/3n9NKSo)
