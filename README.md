@@ -1,20 +1,22 @@
-# Background Information
+# Background
 
-The Customer Experience Center (CEC) team plays a vital role in providing customer support and crop protection services through various channels, such as hotline, direct communication, and social media. This team also plays a crucial role in our organization's digital transformation strategy aimed at providing extensive support to underserved farmers, especially during economic downturns and crises. 
+The Customer Experience Center (CEC) team plays a vital role in providing customer support and sale support through various channels, such as hotline, direct communication, and social media. This team also plays a crucial role in many organizations digital transformation strategy aimed at providing extensive support to a wide variety of users. As the organization scales up its digital operations, there is a need to establish a robust data ecosystem to track and analyze key performance metrics, which will enable better decision-making and support the existing service channels. In this SAMPLE project ....
 
-As the organization scales up its digital agronomy operations, there is a need to establish a robust data ecosystem to track and analyze key performance metrics, which will enable better decision-making and support the existing service channels. The organization's mission is to provide affordable farming technologies and knowledge to Myanmar's farmers, who lack access to resources that can help them adapt to a changing climate while their livelihoods directly depend on it. 
+![](./Diagrams/Define System Requirements.png)
+> The project aims to create a comprehensive data ecosystem for the CEC team, which includes developing ETL workflows, a data repository, a dashboard, and SOPs for maintaining the workflow and dashboard. As part of the project, an audit of the existing data structure will be conducted, and a new template will be recommended to integrate data from multiple sources.
 
-The project aligns with the organization's mission to empower farmers with the right information at the right time to protect their crops from adverse weather conditions and increased pestilence. Most farmers hear or learn about new farm practices and technologies during in-person exchanges. Unfortunately, the pandemic disrupted that routine. So, this project aims to shift from in-person to digital farming advisory, leveraging the growth of social media and information systems with intelligence feedback loops to provide timely and cost-effective farming advice directly to farmers' smartphones. 
 
 # Project Deliverables
 - Project charter [(See More)](https://bit.ly/43OcuA1)
 - ETL workflow [(See More)](https://bit.ly/43Wj9s0)
-- Data repository
+- Data defination [(See More)](https://bit.ly/3n9NKSo)
 - Wireframe
 - Dashboard [(See More)](https://bit.ly/41tLZ1e)
-- SOP
+- SOP [(See More)](https://bit.ly/3NxrWLf)
 - User training
-- Meeting notes
+- Meeting notes [(See More)] (https://bit.ly/3VmnccX)
+
+![](./Diagrams/Requirement Collection Approach.png)
 
 
 # ETL Workflow Diagrams
@@ -31,8 +33,14 @@ The project aligns with the organization's mission to empower farmers with the r
 ![](./Diagrams/Viber_Community_JSON_Parsing_Workflow.png)
 > JSON from Viber Community: We have launched a digital farming practices community in Myanmar by utilizing the widespread coverage of Viber users. Through these communities, we educate farmers on the best practices to manage their farms, land, crops, pests & diseases, and yield. Viber serves as our platform to achieve these goals and connect with farmers.  The platform allows us to export JSON files, which contain daily-level-aggregated data that highlights the status of the community. The digital marketing team is responsible for launching new farming practices, educating, engaging, and maintaining these communities. They regularly download these JSON files and reached out our team (Data Analytics team) for leveraging the power of data and analytics to gain insights into community performance.
 
+# Data modelling
+I use pre-agreated data for this for this portfolio project. It helps me reduce the amount of data and sensitive information that needs to be processed for analyses or reporting. It involves summarizing or grouping data at a higher level of granularity, such as by week or month, instead of processing every individual record. I use THREE pre-agreation methods: 
+- Summarizing data by time intervals (daily basics)
+- Aggregating data by categories (less granularity in dimension data)
+- Filtering data to exclude irrelevant records (omit senstive information)
+[](./Diagrams/Data Modeling.png)
 
-### DAX used in this SAMPLE Dashboard
+### DAX used in this SAMPLE Dashboard [(See More)](https://bit.ly/3n9NKSo)
 
 ```
 # of Inquiry (Hotline) =
@@ -78,7 +86,6 @@ select
   e.InquiryType, 
   c.Crop,
   b.CallType, 
-  b.CallFrom, 
   b.CallStatus, 
   a.FirstHandlerStatus, 
   a.SecondHandlerStatus, 
@@ -87,12 +94,12 @@ select
   b.Remark, 
 from 
   contactcenter_inquiries a 
-  right join contactcenter_calls b on b.ID = a.CallID 
-  left join contactcenter_cropmaster c on c.CropID = a.CropID 
-  left join contactcenter_inquirytopic d on d.InquiryTopicID = a.InquiryTopicID 
-  left join contactcenter_inquirytype e on e.InquiryTypeID = a.InquiryTypeID 
-  left join contactcenter_referraltype f on f.ReferrelTypeID = a.ReferralTypeID 
-  left join branches g on g.BranchID = a.ReferredBranchID
+  right join CXcenter_calls b on b.ID = a.CallID 
+  left join CXcenter_cropmaster c on c.CropID = a.CropID 
+  left join CXcenter_inquirytopic d on d.InquiryTopicID = a.InquiryTopicID 
+  left join CXcenter_inquirytype e on e.InquiryTypeID = a.InquiryTypeID 
+  left join CXcenter_referraltype f on f.ReferrelTypeID = a.ReferralTypeID 
+  left join Branches g on g.BranchID = a.ReferredBranchID
 
 ```
 
@@ -137,4 +144,12 @@ echo ========= Workflow did not complete successfully ===========
 pause
 exit
 ```
+# Dashboard [(See More)](https://bit.ly/41tLZ1e)
+![](./Diagrams/1_Overview.png)
+> This overview tab provides a bird's eye view of the Customer Expereince Center's ability to respond to and serve customers effectively, highlighting the Center's success in managing diverse customer interactions across multiple channels.
 
+![](./Diagrams/2_Inquiry_Mix.png)
+> This tab provides a comprehensive and thorough analysis of the various types of inquiries that the Customer Expereince Center has addressed over the course of the fiscal year. This section presents a detailed and insightful examination of the different types of inquiries that the Customer Expereince Center has encountered, offering an in-depth look into the Center's performance and effectiveness in addressing these inquiries.
+
+![](./Diagrams/3_Call_Responses.png)
+> This section of the dashboard will delve into Customer Expereince Center Daily Operation. Specifically, the primary focus will revolve around the various aspects of team performance, including response time, which plays a crucial role in maintaining effective and efficient Customer Expereince Center.
