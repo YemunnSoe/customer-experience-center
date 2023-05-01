@@ -23,7 +23,7 @@ The Customer Experience Center (CEC) team plays a vital role in providing custom
 ![](./Diagrams/Requirement_Collection_Approach.png)
 
 
-# ETL Workflow Diagrams
+# ETL Workflow Diagrams [(KNIME)](https://www.knime.com/getting-started-guide)
 
 ![](./Diagrams/Combine_Siloed_Data_with_OLAP.png)
 > Combine Siloed Data with Production Data: At the start of this Customer Experience Center, the team used Google Sheets to capture information since the operation was in its early stages. Later on, with support from a centralized Business Intelligence and Data Analytics team, they designed and developed a comprehensive data ecosystem and reporting system. However, Google Sheets continued to be used initially to manage information before Digital Initiative team implement a digital twin of their operation
@@ -78,33 +78,38 @@ CALCULATE(Hotline + SocialMedia)
 ### SQL Query
 
 ```
-select 
+SELECT 
   a.InquiryID,
+  a.CallID,
   b.CallSerialNo,
   b.UserName,
-  b.UserPhone,
+  b.PhoneNumber,
   b.Gender,
-  b.Village,
+  b.VillageTract,
   b.Township,
   b.State,
-  d.InquiryTopic, 
-  e.InquiryType, 
+  d.InquiryTopic,
+  e.InquiryType,
   c.Crop,
-  b.CallType, 
-  b.CallStatus, 
-  a.FirstHandlerStatus, 
-  a.SecondHandlerStatus, 
-  a.ProductandService, 
-  a.ReasonForNoAction, 
-  b.Remark, 
-from 
-  contactcenter_inquiries a 
-  right join CXcenter_calls b on b.ID = a.CallID 
-  left join CXcenter_cropmaster c on c.CropID = a.CropID 
-  left join CXcenter_inquirytopic d on d.InquiryTopicID = a.InquiryTopicID 
-  left join CXcenter_inquirytype e on e.InquiryTypeID = a.InquiryTypeID 
-  left join CXcenter_referraltype f on f.ReferrelTypeID = a.ReferralTypeID 
-  left join Branches g on g.BranchID = a.ReferredBranchID
+  b.CallType,
+  b.AgentID,
+  f.ReferralType,
+  g.BranchName,
+  a.FirstHandlerStatus,
+  a.SecondHandlerStatus,
+  a.SecondHandDateTime,
+  a.CustomerOptions,
+  a.ProductandService,
+  a.ReasonForNoAction,
+  b.Remark
+FROM 
+  CEC_inquiries a 
+  RIGHT JOIN CEC_calls b ON b.ID = a.CallID 
+  LEFT JOIN CEC_cropmaster c ON c.CropID = a.CropID 
+  LEFT JOIN CEC_inquirytopic d ON d.InquiryTopicID = a.InquiryTopicID 
+  LEFT JOIN CEC_inquirytype e ON e.InquiryTypeID = a.InquiryTypeID 
+  LEFT JOIN CEC_referraltype f ON f.ReferrelTypeID = a.ReferralTypeID 
+  LEFT JOIN branches g ON g.BranchID = a.ReferredBranchID
 
 ```
 
