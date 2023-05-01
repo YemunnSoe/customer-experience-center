@@ -1,8 +1,10 @@
 # Background
 
-The Customer Experience Center (CEC) team plays a vital role in providing customer support and sale support through various channels, such as hotline, direct communication, and social media. This team also plays a crucial role in many organizations digital transformation strategy aimed at providing extensive support to a wide variety of users. As the organization scales up its digital operations, there is a need to establish a robust data ecosystem to track and analyze key performance metrics, which will enable better decision-making and support the existing service channels. In this SAMPLE project ....
+The Customer Experience Center (CEC) team plays a vital role in providing customer support and sale support through various channels, such as hotline, direct communication, and social media. This team also plays a crucial role in many organizations digital transformation strategy aimed at providing extensive support to a wide variety of users. As the organization scales up its digital operations, there is a need to establish a robust data ecosystem to track and analyze key performance metrics, which will enable better decision-making and support the existing service channels. 
+
 
 ![](./Diagrams/Define_System_Requirements.png)
+
 > The project aims to create a comprehensive data ecosystem for the CEC team, which includes developing ETL workflows, a data repository, a dashboard, and SOPs for maintaining the workflow and dashboard. As part of the project, an audit of the existing data structure will be conducted, and a new template will be recommended to integrate data from multiple sources.
 
 
@@ -14,7 +16,9 @@ The Customer Experience Center (CEC) team plays a vital role in providing custom
 - Dashboard [(See More)](https://bit.ly/41tLZ1e)
 - SOP [(See More)](https://bit.ly/3NxrWLf)
 - User training
-- Meeting notes [(See More)] (https://bit.ly/3VmnccX)
+- Meeting notes [(See More)](https://bit.ly/3VmnccX)
+
+
 
 ![](./Diagrams/Requirement_Collection_Approach.png)
 
@@ -38,7 +42,7 @@ I use pre-agreated data for this for this portfolio project. It helps me reduce 
 - Summarizing data by time intervals (daily basics)
 - Aggregating data by categories (less granularity in dimension data)
 - Filtering data to exclude irrelevant records (omit senstive information)
-[](./Diagrams/Data Modeling.png)
+[](./Diagrams/Data_Modeling.png)
 
 ### DAX used in this SAMPLE Dashboard [(See More)](https://bit.ly/3n9NKSo)
 
