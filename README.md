@@ -9,12 +9,12 @@ The Customer Experience Center (CEC) team plays a vital role in providing custom
 
 
 # Project Deliverables
-- Project charter (https://bit.ly/43OcuA1)
-- ETL workflow (https://bit.ly/43Wj9s0)
-- Data defination (https://bit.ly/3n9NKSo)
+- [Project charter] (https://bit.ly/43OcuA1)
+- [ETL workflow] (https://bit.ly/43Wj9s0)
+- [Data defination] (https://bit.ly/3n9NKSo)
 - Wireframe
-- Dashboard (https://bit.ly/41tLZ1e)
-- SOP (https://bit.ly/3NxrWLf)
+- [Dashboard] (https://bit.ly/41tLZ1e)
+- [SOP] (https://bit.ly/3NxrWLf)
 - User training
 - Meeting notes [(See More)](https://bit.ly/3VmnccX)
 
