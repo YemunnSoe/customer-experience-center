@@ -45,7 +45,7 @@ I use pre-aggregated data for this portfolio project. It helps me reduce the amo
 - Aggregating data by categories (less granularity in dimension data)
 - Filtering data to exclude irrelevant records (omit sensitive information)
 
-[](./Diagrams/Data_Modeling.png)
+![](./Diagrams/Data_Modeling.png)
 
 ### DAX used in this SAMPLE Dashboard [(See More)](https://bit.ly/3n9NKSo)
 
