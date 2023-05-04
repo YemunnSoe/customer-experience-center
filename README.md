@@ -40,10 +40,10 @@ In our case, we choose to create our own knowledge bank — a robust data ecosys
 > JSON from Viber Community: We have launched a digital farming practices community in Myanmar by utilizing the widespread coverage of Viber users. Through these communities, we educate farmers on the best practices to manage their farms, land, crops, pests & diseases, and yield. Viber serves as our platform to achieve these goals and connect with farmers.  The platform allows us to export JSON files, which contain daily-level-aggregated data that highlights the status of the community. The digital marketing team is responsible for launching new farming practices, educating, engaging, and maintaining these communities. They regularly download these JSON files and reached out our team (Data Analytics team) for leveraging the power of data and analytics to gain insights into community performance.
 
 # Data modelling
-I use pre-agreated data for this for this portfolio project. It helps me reduce the amount of data and sensitive information that needs to be processed for analyses or reporting. It involves summarizing or grouping data at a higher level of granularity, such as by week or month, instead of processing every individual record. I use THREE pre-agreation methods: 
+I use pre-aggregated data for this portfolio project. It helps me reduce the amount of data and sensitive information that needs to be processed for analyses or reporting. It involves summarizing or grouping data at a higher level of granularity, such as by week or month, instead of processing every individual record. I use THREE pre-aggregation methods:
 - Summarizing data by time intervals (daily basics)
 - Aggregating data by categories (less granularity in dimension data)
-- Filtering data to exclude irrelevant records (omit senstive information)
+- Filtering data to exclude irrelevant records (omit sensitive information)
 
 [](./Diagrams/Data_Modeling.png)
 
